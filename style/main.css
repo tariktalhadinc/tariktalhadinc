@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+header {
+    margin: auto;
+    width: 80%;
+    height: 10em;
+    background-color: aqua;
+}

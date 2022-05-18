@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#ttd-icon {
+    width: 650px;
+}
+
+#navbar {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+#navbar ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 25px;
+}
+
+#navbar ul li a{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#navbar ul li a:hover{
+    background-color: #336ea2;
+    border-radius: 8px
+}
+
+
+

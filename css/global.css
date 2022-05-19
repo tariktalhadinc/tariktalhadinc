@@ -22,6 +22,10 @@
     /* background: linear-gradient(180.94deg, #2A50D6 -49.25%, rgba(42, 172, 214, 0.280811) 51.33%, rgba(42, 183, 214, 0) 142.41%);; */
 }
 
+.bg-white {
+    background-color: white;
+}
+
 .bg-black {
     background: black;
 }

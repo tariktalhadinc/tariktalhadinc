@@ -11,6 +11,10 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+.header {
+    width: 10%;
+}
+
 #ttd-icon {
     width: 650px;
 }
@@ -21,8 +25,8 @@ html {
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
 }
 
 #navbar ul {
@@ -37,9 +41,7 @@ html {
 }
 
 #navbar ul li a:hover{
-    background-color: #336ea2;
-    border-radius: 8px
+    background-color: #AA1916;
+    border-radius: 10px;
+    color: white;
 }
-
-
-

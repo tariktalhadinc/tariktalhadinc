@@ -29,10 +29,3 @@
 .bg-black {
     background: black;
 }
-
-/* Conteiner */
-
-.conteiner {
-    max-width: 1920px;
-    margin: 0 auto;
-}

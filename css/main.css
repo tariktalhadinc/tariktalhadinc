@@ -91,7 +91,6 @@ nav ul li a:hover{
 }
 #about-me-text {
     width: 60%;
-    flex-grow: 4;
 }
 #about-me-text p {
     font-size: 20px;
@@ -140,11 +139,11 @@ footer {
         width: 50px;
     }
     100% {
-        width:60px;
+        width:55px;
     }
 }
 .footer-icons:hover {
-    animation: identifier 1s forwards;
+    animation: identifier 0.01s forwards;
     
 }
 #right-footer {

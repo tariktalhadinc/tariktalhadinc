@@ -11,6 +11,8 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* Navbar and logo */
+
 header {
     width: 100%;
     height: 100px;
@@ -67,20 +69,24 @@ nav ul li a:hover{
     padding: 5px;
 }
 
+/* Main Content */
 
-.content {
-    width: 100%;
-    padding-top: 150px;
-}
-#welcome {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
-#welcome-text {
-    margin-left: 20px;
-}
+    /* Welcome Text */
+    .content {
+        width: 100%;
+        padding-top: 150px;
+    }
+    #welcome {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+    #welcome-text {
+        margin-left: 20px;
+    }
+
+/* About-Me */
 
 #about-me {
     width: 80%;
@@ -107,6 +113,7 @@ nav ul li a:hover{
     position: fixed;
 }
 
+/* Footer */
 
 footer {
     width: 80%;

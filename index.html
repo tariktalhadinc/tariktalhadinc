@@ -31,17 +31,18 @@
 </head>
 
 <body class="bg-white">
+
     <header>
         <div id="centered-header">
             <!-- Logo -->
             <section id="header-logo">
-                <a href="www.tariktalhadinc.com"><img id="logo" src="./icons/ttd.png" alt="Tarık Talha Dinç"></a>
+                <a href="http://www.tariktalhadinc.com"><img id="logo" src="./icons/ttd.png" alt="Tarık Talha Dinç"></a>
             </section>
             <!-- Navbar -->
             <nav>
                 <ul>
-                    <li><a href="#Hakkımda" target="_blank">Hakkımda</a></li>
-                    <li><a href="#Blog" target="_blank">Blog</a></li>
+                    <li><a href="index.html" target="_blank">Hakkımda</a></li>
+                    <li><a href="blog.html" target="_blank">Blog</a></li>
                     <li><a href="ttd-cv.pdf" target="_blank">Kariyer</a></li>
                 </ul>
             </nav>
@@ -66,7 +67,8 @@
                     İş dünyasına ilk adımımı <a target="_blank" style="color: rgb(231, 147, 43); font-weight:bold;"
                         href="https://www.disoo.com/#/disoo">Disoo</a> uygulamasının kampüs menejeri olarak Ekim 2021 de
                     attım. <br> Yarı
-                    zamanlı olarak Şubat 2022'ye kadar görevime devam ettim. <br> İkinci durağım ise <a target="_blank" style="color: rgb(255, 181, 53); font-weight:bold;" href="https://carstudio.ai/tr">CarStudio.ai
+                    zamanlı olarak Şubat 2022'ye kadar görevime devam ettim. <br> İkinci durağım ise <a target="_blank"
+                        style="color: rgb(255, 181, 53); font-weight:bold;" href="https://carstudio.ai/tr">CarStudio.ai
                         AI</a>
                     sistemi oldu. <br> Ağrılıklı olarak ürünün yurt dışına pazarlanmasıyla ilgilendim. <br> Nisan
                     2022'de CarStudio.ai şirketinden ayrıldım ve hemen çağa ve bana en uygun olduğunu düşündüğüm
@@ -79,23 +81,59 @@
             </div>
         </div>
     </div>
+
+    <!-- Footer -->
+
     <footer>
         <div id="left-footer">
-            <p>If you’re looking to work with me feel free to email me at <a style="color:#AA1916; font-weight: bold;"
-                    href="mailto:tariktalhadinc@gmail.com">tariktalhadinc@gmail.com</a></p>
+            <p>Benimle çalışmak veya bir kahve içmek istiyorsanız, <a style="color:#AA1916; font-weight: bold;"
+                href="mailto:tariktalhadinc@gmail.com">tariktalhadinc@gmail.com</a> adresinden bana e-posta göndermekten çekinmeyin.</p>
         </div>
         <div id="mid-footer">
-            <a target="_blank" href="https://www.instagram.com/tariktalhadinc/"><img src="icons/insta.png" alt="Instagram"
-                    class="footer-icons"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/tariktalhadinc/"><img src="icons/linkedin.png" alt="Linkedin"
-                    class="footer-icons"></a>
+            <a target="_blank" href="https://www.instagram.com/tariktalhadinc/"><img src="icons/instagram-icon.svg"
+                    alt="Instagram" class="footer-icons"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/tariktalhadinc/"><img src="icons/linkedin-icon.svg"
+                    alt="Linkedin" class="footer-icons"></a>
             <a target="_blank" href="https://open.spotify.com/user/p90xbq2qnul4wnxu8qr494n0v?si=1667cb904b9648f7"><img
-                    src="icons/spotify.png" alt="Spotify" class="footer-icons"></a>
+                    src="icons/spotify-icon.svg" alt="Spotify" class="footer-icons"></a>
         </div>
+
+        <!-- Blog Footer -->
+
         <div id="right-footer">
-            <button style="font-weight:bold" type="button" class="btn btn-outline-warning" id="subscribe">Bloga Abone Ol!</button>
+            <button style="font-weight:bold" type="button" class="btn" id="subscribe"
+                data-bs-toggle="modal" data-bs-target="#blogKayit">Bloga Abone Ol!</button>
         </div>
     </footer>
-    </bobdy>
+
+        <!-- Modal -->
+
+        <div class="modal fade" id="blogKayit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Bloga Abone Ol !</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">@</span>
+                            <input type="text" class="form-control" placeholder="Kullanıcı Adı" aria-label="Username" aria-describedby="basic-addon1">
+                         </div>
+                          <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                          </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Geri</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal"onclick="alert" >Abone Ol!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+    </body>
 
 </html>

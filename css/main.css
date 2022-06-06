@@ -1,12 +1,14 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
     color: black;
 }
+
 html {
     font-family: 'Open Sans', sans-serif;
 }
@@ -28,7 +30,7 @@ header {
 #centered-header {
     width: 80%;
     display: flex;
-    justify-content:space-between ;
+    justify-content: space-between;
 }
 
 #header-logo {
@@ -36,6 +38,7 @@ header {
     display: flex;
     align-items: center;
 }
+
 #logo {
     width: 100%;
 }
@@ -44,7 +47,7 @@ header {
 nav {
     background-color: white;
     display: flex;
-    align-items:center;
+    align-items: center;
     width: 50%;
 }
 
@@ -57,34 +60,36 @@ nav ul {
     width: 100%;
 }
 
-nav ul li a{
+nav ul li a {
     margin-left: 50px;
     padding: 5px;
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
     background-color: #AA1916;
     border-radius: 10px;
     color: white;
-    padding: 5px;
+    padding: 3px;
 }
 
 /* Main Content */
 
-    /* Welcome Text */
-    .content {
-        width: 100%;
-        padding-top: 150px;
-    }
-    #welcome {
-        width: 80%;
-        margin: auto;
-        display: flex;
-        align-items: center;
-    }
-    #welcome-text {
-        margin-left: 20px;
-    }
+/* Welcome Text */
+.content {
+    width: 100%;
+    padding-top: 150px;
+}
+
+#welcome {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#welcome-text {
+    margin-left: 20px;
+}
 
 /* About-Me */
 
@@ -95,16 +100,19 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-between;
 }
+
 #about-me-text {
     width: 60%;
 }
+
 #about-me-text p {
     font-size: 20px;
 }
+
 #about-me-picture {
     width: 40%;
     display: flex;
-    justify-content: flex-end; 
+    justify-content: flex-end;
 }
 
 #ttd-picture {
@@ -126,44 +134,67 @@ footer {
     left: 10%;
     right: 10%;
 }
+
 #left-footer {
     width: 30%;
     display: flex;
     align-items: center;
 }
+
 #mid-footer {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
+
 .footer-icons {
     width: 50px;
 
 }
+
 @keyframes identifier {
     0% {
         width: 50px;
     }
+
     100% {
-        width:55px;
+        width: 55px;
     }
 }
+
 .footer-icons:hover {
-    animation: identifier 0.01s forwards;
-    
+    animation: identifier 0.1s forwards;
+
 }
+
 #right-footer {
     width: 30%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
 }
+
+
 #subscribe {
     color: #AA1916;
     border-color: #AA1916;
 }
+
 #subscribe:hover {
     background-color: #AA1916;
     color: white;
+}
+
+/* Blog Kayıt */
+
+.modal-header .btn-close{
+    margin: 0;
+}
+
+#exampleModalLabel{
+    margin-left: 165px;
+}
+#blogKayit{
+    margin-top: 300px;
 }

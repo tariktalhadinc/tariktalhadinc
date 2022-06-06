@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T T D | Blog</title>
+    <meta name="keywords" content="Tarık Talha DİNÇ, Boğaziçi Üniversitesi,CET, Istanbul">
+    <meta name="description" content="Tarık Talha DİNÇ">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="./icons/ticon.ico">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/blog.css">
+
+    <!-- Google Fontlar -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Tablet & Telefon için-->
+
+    <link rel="stylesheet" media="[max-width:768px]" href="./css/tablet.css">
+    <link rel="stylesheet" media="[max-width:500px]" href="./css/mobile.css">
+</head>
+
+<body>
+    <header>
+        <div id="centered-header">
+            <!-- Logo -->
+            <section id="header-logo">
+                <a href="http://www.tariktalhadinc.com"><img id="logo" src="./icons/ttd.png" alt="Tarık Talha Dinç"></a>
+            </section>
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li><a href="index.html" target="_blank">Hakkımda</a></li>
+                    <li><a href="blog.html" target="_blank">Blog</a></li>
+                    <li><a href="ttd-cv.pdf" target="_blank">Kariyer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <!-- Footer -->
+
+        <footer>
+            <div id="left-footer">
+                <p>Benimle çalışmak veya bir kahve içmek istiyorsanız, <a style="color:#AA1916; font-weight: bold;"
+                    href="mailto:tariktalhadinc@gmail.com">tariktalhadinc@gmail.com</a> adresinden bana e-posta göndermekten çekinmeyin.</p>
+            </div>
+            <div id="mid-footer">
+                <a target="_blank" href="https://www.instagram.com/tariktalhadinc/"><img src="icons/instagram-icon.svg"
+                        alt="Instagram" class="footer-icons"></a>
+                <a target="_blank" href="https://www.linkedin.com/in/tariktalhadinc/"><img src="icons/linkedin-icon.svg"
+                        alt="Linkedin" class="footer-icons"></a>
+                <a target="_blank" href="https://open.spotify.com/user/p90xbq2qnul4wnxu8qr494n0v?si=1667cb904b9648f7"><img
+                        src="icons/spotify-icon.svg" alt="Spotify" class="footer-icons"></a>
+            </div>
+    
+            <!-- Blog Footer -->
+    
+            <div id="right-footer">
+                <button style="font-weight:bold" type="button" class="btn" id="subscribe"
+                    data-bs-toggle="modal" data-bs-target="#blogKayit">Bloga Abone Ol!</button>
+            </div>
+        </footer>
+    
+        <!-- Blog Footer Modal -->
+    
+            <div class="modal fade" id="blogKayit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Bloga Abone Ol !</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text" id="basic-addon1">@</span>
+                                <input type="text" class="form-control" placeholder="Kullanıcı Adı" aria-label="Username" aria-describedby="basic-addon1">
+                             </div>
+                              <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                                <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                              </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Geri</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal"onclick="alert" >Abone Ol!</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- Fotoğraflar -->
+    <section class="myPhotos">
+        <h1>Fotoğraflarım</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="./foto1.png" alt="Boğaz Fotoğrafı">
+                    <span class="photo-category">Manzara</span>
+                    <h3>Talhanın Kamerasından</h3>
+                    <div class="price">$10 <span>$20</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="./foto2.png" alt="Boğaz Fotoğrafı">
+                    <span class="photo-category">Manzara</span>
+                    <h3>Talhanın Kamerasından</h3>
+                    <div class="price">$10 <span>$20</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="./foto3.png"alt="Boğaz Fotoğrafı">
+                    <span class="photo-category">Manzara</span>
+                    <h3>Talhanın Kamerasından</h3>
+                    <div class="price">$10 <span>$20</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <img src="./foto4.png" alt="Boğaz Fotoğrafı">
+                    <span class="photo-category">Manzara</span>
+                    <h3>Talhanın Kamerasından</h3>
+                    <div class="price">$10 <span>$20</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>

@@ -74,36 +74,101 @@ nav ul li a:hover {
 
 /* Fotoğraflar */
 
-.btn {
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+}
+
+.card-title { 
+    margin-bottom: 2%;
+    text-align: center;
     background-color: #AA1916;
-    margin-top: 1rem;
-    display: inline-block;
-    padding: 2rem 3.75rem;
-    border-radius: 30rem;
-    font-size: 1.7rem;
-    color: #fff;
-    cursor: pointer;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: larger;
 }
 
-.myPhotos .box-container{
-    width: 40%;
-    height: 40%;
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(1px, 1fr));
-    gap: 10rem;
+.card  {
+    width: 450px;
+    height: 600px;
+    margin-top: 9.5%;
+    margin-left: 3%;
 }
 
-.myPhotos .box-container .box{
-    padding: 3rem;
-    background-color: #fff;
-
+.card img{
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
 }
 
-.myPhotos .box-container .img {
-    width: 100%;
-    
+.card-body {
+    text-align: center;
+}
+
+.card-body .btn {
+    margin:3px;
     
 }
+
+
+
+/*  Fotoğraf Satın Alması Start */
+
+
+/* CSS for Credit Card Payment form */
+.credit-card-box .panel-title {
+    display: inline;
+    font-weight: bold;
+}
+.credit-card-box .form-control.error {
+    border-color: red;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075),0 0 8px rgba(255,0,0,0.6);
+}
+.credit-card-box label.error {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box .payment-errors {
+  font-weight: bold;
+  color: red;
+  padding: 2px 8px;
+  margin-top: 2px;
+}
+.credit-card-box label {
+    display: block;
+}
+/* The old "center div vertically" hack */
+.credit-card-box .display-table {
+    display: flex;
+    justify-content:center ;
+    height: 200px;
+    align-items:center ;
+
+}
+.credit-card-box .display-tr {
+    display: table-row;
+}
+.credit-card-box .display-td {
+    display: table-cell;
+    vertical-align: middle;
+    width: 60%;
+}
+/* Just looks nicer */
+.credit-card-box .panel-heading img {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+
+/* Fotoğraf Satın Alması End */
+
 
 /* Footer */
 

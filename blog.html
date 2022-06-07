@@ -32,6 +32,7 @@
 </head>
 
 <body>
+
     <header>
         <div id="centered-header">
             <!-- Logo -->
@@ -48,59 +49,440 @@
             </nav>
         </div>
     </header>
-        <!-- Footer -->
+    <!-- Footer -->
 
-        <footer>
-            <div id="left-footer">
-                <p>Benimle çalışmak veya bir kahve içmek istiyorsanız, <a style="color:#AA1916; font-weight: bold;"
-                    href="mailto:tariktalhadinc@gmail.com">tariktalhadinc@gmail.com</a> adresinden bana e-posta göndermekten çekinmeyin.</p>
-            </div>
-            <div id="mid-footer">
-                <a target="_blank" href="https://www.instagram.com/tariktalhadinc/"><img src="icons/instagram-icon.svg"
-                        alt="Instagram" class="footer-icons"></a>
-                <a target="_blank" href="https://www.linkedin.com/in/tariktalhadinc/"><img src="icons/linkedin-icon.svg"
-                        alt="Linkedin" class="footer-icons"></a>
-                <a target="_blank" href="https://open.spotify.com/user/p90xbq2qnul4wnxu8qr494n0v?si=1667cb904b9648f7"><img
-                        src="icons/spotify-icon.svg" alt="Spotify" class="footer-icons"></a>
-            </div>
-    
-            <!-- Blog Footer -->
-    
-            <div id="right-footer">
-                <button style="font-weight:bold" type="button" class="btn" id="subscribe"
-                    data-bs-toggle="modal" data-bs-target="#blogKayit">Bloga Abone Ol!</button>
-            </div>
-        </footer>
-    
-        <!-- Blog Footer Modal -->
-    
-            <div class="modal fade" id="blogKayit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Bloga Abone Ol !</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="input-group mb-3">
-                                <span class="input-group-text" id="basic-addon1">@</span>
-                                <input type="text" class="form-control" placeholder="Kullanıcı Adı" aria-label="Username" aria-describedby="basic-addon1">
-                             </div>
-                              <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                                <span class="input-group-text" id="basic-addon2">@gmail.com</span>
-                              </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Geri</button>
-                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal"onclick="alert" >Abone Ol!</button>
-                        </div>
+    <footer>
+        <div id="left-footer">
+            <p>Benimle çalışmak veya bir kahve içmek istiyorsanız, <a style="color:#AA1916; font-weight: bold;"
+                    href="mailto:tariktalhadinc@gmail.com">tariktalhadinc@gmail.com</a> adresinden bana e-posta
+                göndermekten çekinmeyin.</p>
+        </div>
+        <div id="mid-footer">
+            <a target="_blank" href="https://www.instagram.com/tariktalhadinc/"><img src="icons/instagram-icon.svg"
+                    alt="Instagram" class="footer-icons"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/tariktalhadinc/"><img src="icons/linkedin-icon.svg"
+                    alt="Linkedin" class="footer-icons"></a>
+            <a target="_blank" href="https://open.spotify.com/user/p90xbq2qnul4wnxu8qr494n0v?si=1667cb904b9648f7"><img
+                    src="icons/spotify-icon.svg" alt="Spotify" class="footer-icons"></a>
+        </div>
+
+        <!-- Blog Footer -->
+
+        <div id="right-footer">
+            <button style="font-weight:bold" type="button" class="btn" id="subscribe" data-bs-toggle="modal"
+                data-bs-target="#blogKayit">Bloga Abone Ol!</button>
+        </div>
+    </footer>
+
+    <!-- Blog Footer Modal -->
+
+    <div class="modal fade" id="blogKayit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Bloga Abone Ol !</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Kullanıcı Adı" aria-label="Username"
+                            aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="E-mail" aria-label="Recipient's username"
+                            aria-describedby="basic-addon2">
+                        <span class="input-group-text" id="basic-addon2">@gmail.com</span>
                     </div>
                 </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Geri</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="show()">Abone Ol!</button>
+                </div>
             </div>
+        </div>
+    </div>
 
-        <!-- Fotoğraflar -->
-    <section class="myPhotos">
+    <!-- Fotoğraflar ve Satın Alma Sayfası -->
+
+    <section class="cards">
+
+        <!-- 1. Fotoğraf -->
+
+        <div class="card">
+            <img src="./images/foto1.png" class="card-img-top" alt="Galatadan Haliç">
+
+            <div class="card-body">
+                <h5 class="card-title">Galatadan Haliç</h5>
+                <p class="card-text">Galata Kulesinden çektiğim bu fotoğrafta boğazın serin sularını ve binalar arasında
+                    kalmış yeşillikleri görüyorsunuz.</p>
+                <a href="#" class="btn" style="text-decoration:line-through;background-color:#5C5CFF;"> Satın Al -
+                    20$</a>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#payment-1"
+                    style="color: aliceblue; font-weight:bold;  background-color:#AA1916; border-color:#AA1916;">Satın
+                    Al - 10$</button>
+                <a href="#" class="btn" style="text-decoration:line-through;background-color:#5C5CFF">Satın Al - 30$</a>
+            </div>
+        </div>
+
+        <!-- 1. Fotoğraf Satın Alması -->
+
+        <div class="modal fade" id="payment-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" style="color:#AA1916;" id="exampleModalLabel">Ödeme Sayfası</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <!-- You can make it whatever width you want. I'm making it full width
+                        on <= small devices and 4/12 page width on >= medium devices -->
+                                
+
+
+                                    <!-- CREDIT CARD FORM STARTS HERE -->
+                                    <div class="panel panel-default credit-card-box">
+                                        <div class="panel-heading display-table">
+                                            <div class="row display-tr">
+                                                <div class="display-td">
+                                                    <img class="img-responsive pull-right"
+                                                        src="./images/credit-card.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <form role="form" id="payment-form">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <div class="form-group">
+                                                            <label for="cardNumber">Kart Numarası</label>
+                                                            <div class="input-group">
+                                                                <input type="tel" class="form-control" name="cardNumber"
+                                                                    placeholder="Kredi Kartı Numarası"
+                                                                    autocomplete="cc-number" required autofocus />
+                                                                <span class="input-group-addon"><i
+                                                                        class="fa fa-credit-card"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-7 col-md-7">
+                                                        <div class="form-group">
+                                                            <label for="cardExpiry"><span
+                                                                    class="hidden-xs">Son </span><span
+                                                                    class="visible-xs-inline">Kullanma </span>Tarihi</label>
+                                                            <input type="tel" class="form-control" name="cardExpiry"
+                                                                placeholder="AA / YY" autocomplete="cc-exp" required />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-5 col-md-5 pull-right">
+                                                        <div class="form-group">
+                                                            <label for="cardCVC">CVC</label>
+                                                            <input type="tel" class="form-control" name="cardCVC"
+                                                                placeholder="CVC" autocomplete="cc-csc" required />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <div class="form-group">
+                                                            <label for="couponCode">Kupon Kodunuz</label>
+                                                            <input type="text" class="form-control" placeholder="Kupon Kodunuz Varsa Giriniz" name="couponCode" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <button class="btn btn-success btn-lg btn-block" data-bs-dismiss="modal"
+                                                            type="submit">Ödemeyi Tamamla</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="display:none;">
+                                                    <div class="col-xs-12">
+                                                        <p class="payment-errors"></p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- CREDIT CARD FORM ENDS HERE -->
+
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <!-- If you're using Stripe for payments -->
+                        <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+                        <div class="modal-footer" style="justify-content:center;">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Geri</button>
+                            <button type="button" class="btn" style="background-color:#5C5CFF;color:azure;" data-bs-dismiss="modal" >Sepete Ekle ve Alışverişe devam et</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. Fotoğraf -->
+
+        <div class="card">
+            <img src="./images/foto3.png" class="card-img-top" alt="Hayvanat Duvarı">
+
+            <div class="card-body">
+                <h5 class="card-title">Hayvanat Duvarı</h5>
+                <p class="card-text">Beşiktaş çarşı yanında bulunan bu duvar sanatçıların yaratıcı havan resimlerini
+                    içeriyor. </p>
+                <a href="#" class="btn" style="text-decoration:line-through;background-color:#5C5CFF">Satın Al - 15$</a>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#payment-2"
+                    style="color: aliceblue; font-weight:bold;  background-color:#AA1916; border-color:#AA1916;">Satın
+                    Al - 10$</button>
+                <a href="#" class="btn" style="text-decoration:line-through;background-color:#5C5CFF">Satın Al - 20$</a>
+            </div>
+        </div>
+
+        <!-- 2. Fotoğraf Satın Alması -->
+
+        <div class="modal fade" id="payment-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" style="color:#AA1916;" id="exampleModalLabel">Ödeme Sayfası</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <!-- You can make it whatever width you want. I'm making it full width
+                        on <= small devices and 4/12 page width on >= medium devices -->
+                                
+
+
+                                    <!-- CREDIT CARD FORM STARTS HERE -->
+                                    <div class="panel panel-default credit-card-box">
+                                        <div class="panel-heading display-table">
+                                            <div class="row display-tr">
+                                                <div class="display-td">
+                                                    <img class="img-responsive pull-right"
+                                                        src="./images/credit-card.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <form role="form" id="payment-form">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <div class="form-group">
+                                                            <label for="cardNumber">Kart Numarası</label>
+                                                            <div class="input-group">
+                                                                <input type="tel" class="form-control" name="cardNumber"
+                                                                    placeholder="Kredi Kartı Numarası"
+                                                                    autocomplete="cc-number" required autofocus />
+                                                                <span class="input-group-addon"><i
+                                                                        class="fa fa-credit-card"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-7 col-md-7">
+                                                        <div class="form-group">
+                                                            <label for="cardExpiry"><span
+                                                                    class="hidden-xs">Son </span><span
+                                                                    class="visible-xs-inline">Kullanma </span>Tarihi</label>
+                                                            <input type="tel" class="form-control" name="cardExpiry"
+                                                                placeholder="AA / YY" autocomplete="cc-exp" required />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-5 col-md-5 pull-right">
+                                                        <div class="form-group">
+                                                            <label for="cardCVC">CVC</label>
+                                                            <input type="tel" class="form-control" name="cardCVC"
+                                                                placeholder="CVC" autocomplete="cc-csc" required />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <div class="form-group">
+                                                            <label for="couponCode">Kupon Kodunuz</label>
+                                                            <input type="text" class="form-control" placeholder="Kupon Kodunuz Varsa Giriniz" name="couponCode" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <button class="btn btn-success btn-lg btn-block" data-bs-dismiss="modal"
+                                                            type="submit">Ödemeyi Tamamla</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="display:none;">
+                                                    <div class="col-xs-12">
+                                                        <p class="payment-errors"></p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- CREDIT CARD FORM ENDS HERE -->
+
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <!-- If you're using Stripe for payments -->
+                        <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+                        <div class="modal-footer" style="justify-content:center;">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Geri</button>
+                            <button type="button" class="btn" style="background-color:#5C5CFF;color:azure;" data-bs-dismiss="modal" >Sepete Ekle ve Alışverişe devam et</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. Fotoğraf -->
+
+        <div class="card">
+            <img src="./images/foto2.png" class="card-img-top" alt="Galata Kulesi">
+
+            <div class="card-body">
+                <h5 class="card-title">Galata Kulesi</h5>
+                <p class="card-text">İstanbulun simgelerinden biri olan Galata Kulesinin Eminönü sahilden çekilmiş
+                    fotoğrafı bir renk cümbüşü gibi.</p>
+                <a href="#" class="btn" style="text-decoration:line-through;background-color:#5C5CFF">Satın Al - 19$</a>
+                <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#payment-3"
+                    style="color: aliceblue; font-weight:bold;  background-color:#AA1916; border-color:#AA1916;">Satın
+                    Al - 9$</button>
+                <a href="#" class="btn" style="text-decoration:line-through;background-color:#5C5CFF">Satın Al - 29$</a>
+            </div>
+        </div>
+
+        <!-- 3. Fotoğraf Satın Alması -->
+
+        <div class="modal fade" id="payment-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" style="color:#AA1916;" id="exampleModalLabel">Ödeme Sayfası</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row">
+                                <!-- You can make it whatever width you want. I'm making it full width
+                        on <= small devices and 4/12 page width on >= medium devices -->
+                                
+
+
+                                    <!-- CREDIT CARD FORM STARTS HERE -->
+                                    <div class="panel panel-default credit-card-box">
+                                        <div class="panel-heading display-table">
+                                            <div class="row display-tr">
+                                                <div class="display-td">
+                                                    <img class="img-responsive pull-right"
+                                                        src="./images/credit-card.png">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="panel-body">
+                                            <form role="form" id="payment-form">
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <div class="form-group">
+                                                            <label for="cardNumber">Kart Numarası</label>
+                                                            <div class="input-group">
+                                                                <input type="tel" class="form-control" name="cardNumber"
+                                                                    placeholder="Kredi Kartı Numarası"
+                                                                    autocomplete="cc-number" required autofocus />
+                                                                <span class="input-group-addon"><i
+                                                                        class="fa fa-credit-card"></i></span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-7 col-md-7">
+                                                        <div class="form-group">
+                                                            <label for="cardExpiry"><span
+                                                                    class="hidden-xs">Son </span><span
+                                                                    class="visible-xs-inline">Kullanma </span>Tarihi</label>
+                                                            <input type="tel" class="form-control" name="cardExpiry"
+                                                                placeholder="AA / YY" autocomplete="cc-exp" required />
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-xs-5 col-md-5 pull-right">
+                                                        <div class="form-group">
+                                                            <label for="cardCVC">CVC</label>
+                                                            <input type="tel" class="form-control" name="cardCVC"
+                                                                placeholder="CVC" autocomplete="cc-csc" required />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <div class="form-group">
+                                                            <label for="couponCode">Kupon Kodunuz</label>
+                                                            <input type="text" class="form-control" placeholder="Kupon Kodunuz Varsa Giriniz" name="couponCode" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-xs-12">
+                                                        <button class="btn btn-success btn-lg btn-block" data-bs-dismiss="modal"
+                                                            type="submit">Ödemeyi Tamamla</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row" style="display:none;">
+                                                    <div class="col-xs-12">
+                                                        <p class="payment-errors"></p>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!-- CREDIT CARD FORM ENDS HERE -->
+
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+
+                        <!-- If you're using Stripe for payments -->
+                        <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+                        <div class="modal-footer" style="justify-content:center;">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Geri</button>
+                            <button type="button" class="btn" style="background-color:#5C5CFF;color:azure;" data-bs-dismiss="modal" >Sepete Ekle ve Alışverişe devam et</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="myPhotos">
         <h1>Fotoğraflarım</h1>
         <div class="box-container">
             <div class="box">
@@ -148,5 +530,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
+
+    <script>function show() { alert("Abone Olduğunuz için teşekkürler");}</script>
 </body>

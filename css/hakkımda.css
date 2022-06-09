@@ -13,7 +13,7 @@ html {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Navbar and Logo */
+/* Navbar and logo */
 
 header {
     width: 100%;
@@ -72,52 +72,67 @@ nav ul li a:hover {
     padding: 3px;
 }
 
-/* Carousel Start */
-#carouselExampleCaptions {
-    position: relative;
-    top: 100px;
+/* Main Content */
+
+/* Welcome Text */
+.content {
+    width: 100%;
+    padding-top: 150px;
 }
-/* Carousel End */
 
-/* SSS,ilgi alanlarım ve hobilerim */
-
-.about-cards{
+#welcome {
+    width: 80%;
+    margin: auto;
     display: flex;
+    align-items: center;
 }
 
-.card  {
-    width: 27%;
-    height: 450px;
-    margin: 6%;
+#welcome-text {
+    margin-left: 20px;
 }
 
-.card-title { 
-    margin-bottom: 2%;
-    background-color: #3C5CD2;
-    border-radius: 5px;
-    color: aliceblue;
-    font-size: larger;
-    text-align: center;
+/* About-Me */
+
+#about-me {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.sss-card li{
-    list-style:circle;
+#about-me-text {
+    width: 60%;
 }
 
+#about-me-text p {
+    font-size: 20px;
+}
 
+#about-me-picture {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
 
-/* SSS,ilgi alanlarım ve hobilerim */
+#ttd-picture {
+    width: 400px;
+    border-radius: 50%;
+    position: fixed;
+}
 
-/* Footer Start */
+/* Footer */
 
 footer {
     width: 80%;
     height: 100px;
     background-color: white;
+    position: fixed;
     display: flex;
     justify-content: space-between;
-    margin: auto;
     bottom: 0px;
+    left: 10%;
+    right: 10%;
 }
 
 #left-footer {
@@ -135,7 +150,6 @@ footer {
 
 .footer-icons {
     width: 50px;
-
 }
 
 @keyframes identifier {
@@ -150,7 +164,6 @@ footer {
 
 .footer-icons:hover {
     animation: identifier 0.1s forwards;
-
 }
 
 #right-footer {
@@ -173,16 +186,13 @@ footer {
 
 /* Blog Kayıt */
 
-.modal-header .btn-close {
+.modal-header .btn-close{
     margin: 0;
 }
 
-#exampleModalLabel {
+#exampleModalLabel{
     margin-left: 165px;
 }
-
-#blogKayit {
+#blogKayit{
     margin-top: 300px;
 }
-
-/* Footer End */

@@ -90,10 +90,10 @@ nav ul li a:hover {
 }
 
 .card  {
-    width: 450px;
-    height: 600px;
-    margin-top: 9.5%;
-    margin-left: 3%;
+    width: 27%;
+    height: 45%;
+    margin: 6% auto;
+    
 }
 
 .card img{
@@ -107,7 +107,7 @@ nav ul li a:hover {
 }
 
 .card-body .btn {
-    margin:3px;
+    width: auto;
     
 }
 
@@ -115,8 +115,6 @@ nav ul li a:hover {
 
 /*  Fotoğraf Satın Alması Start */
 
-
-/* CSS for Credit Card Payment form */
 .credit-card-box .panel-title {
     display: inline;
     font-weight: bold;
@@ -141,7 +139,7 @@ nav ul li a:hover {
 .credit-card-box label {
     display: block;
 }
-/* The old "center div vertically" hack */
+
 .credit-card-box .display-table {
     display: flex;
     justify-content:center ;
@@ -157,18 +155,26 @@ nav ul li a:hover {
     vertical-align: middle;
     width: 60%;
 }
-/* Just looks nicer */
 .credit-card-box .panel-heading img {
     width: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
 }
-
-
 /* Fotoğraf Satın Alması End */
 
+/* Video Start */
+.video-card {
+    border:1px solid gray;
+    border-radius: 10px;
+    width: 80%;
+    position: relative;
+    bottom: 50px;
+    display:flex;
+    margin: auto;
+
+}
+/* Video End */
 
 /* Footer */
 
@@ -176,12 +182,11 @@ footer {
     width: 80%;
     height: 100px;
     background-color: white;
-    position: fixed;
     display: flex;
     justify-content: space-between;
+    margin: auto;
     bottom: 0px;
-    left: 10%;
-    right: 10%;
+
 }
 
 #left-footer {

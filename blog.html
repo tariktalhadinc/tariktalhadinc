@@ -554,23 +554,48 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Bloga Abone Ol !</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">Abone Ol !</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="basic-addon1">E-mail</span>
-                        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon">
+                        <input type="email" class="form-control" id="basic_email" placeholder="" aria-label="Username" aria-describedby="basic-addon">
                      </div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Geri</button>
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="show()">Abone
-                        Ol!</button>
+                    <button type="button" id="basic_abone_btn" class="btn btn-primary" data-bs-dismiss="modal">Abone Ol!</button>
+                    <label for="btn btn-primary"></label>
                 </div>
             </div>
         </div>
     </div>
 
-    <script>function show() { alert("Abone Olduğunuz için teşekkürler"); }</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+    
+    <script>     
+        $("#basic_abone_btn").click(function(){
+
+        alert("Abone olduğunuz için teşekkürler !");
+            $.ajax({
+                url : 'https://localhost:7264/Personals/Add',
+                type : 'POST',           
+                data : JSON.stringify ({'name' : $("#basic_email").val()}),
+                contentType: 'application/json; charset=UTF-8',
+
+                success : function(data)
+                {              
+                    alert('Gelen kutunuzu kontrol ediniz'+data);
+                },
+        
+                error : function(request,error)
+                {
+                    alert("Request: "+JSON.stringify(request));
+                }
+            });
+        });
+        
+    </script>
 </body>

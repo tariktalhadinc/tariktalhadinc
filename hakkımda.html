@@ -29,7 +29,7 @@
     <link rel="stylesheet" media="[max-width:500px]" href="./css/mobile.css">
 </head>
 
-<body class="bg-white">
+<body class="bg-white" onload='document.form1.text1.focus()'>
 
     <header>
         <div id="centered-header">
@@ -121,7 +121,7 @@
                     <div class="modal-body">
                         <div class="input-group mb-3">
                             <span class="input-group-text" id="basic-addon1">E-mail</span>
-                            <input type="email" class="form-control" id="basic_email" placeholder="" aria-label="Username" aria-describedby="basic-addon">
+                            <input type="text" required value="@gmail.com" class="form-control" id="email" name="text1" placeholder="" aria-label="Username" aria-describedby="basic-addon" onclick="validateEmail(document.form1.text1)">
                          </div>
                     </div>
                     <div class="modal-footer">
@@ -132,10 +132,10 @@
                 </div>
             </div>
         </div>
-
+        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
       
-        <script>     
+        <script>  
             $("#basic_abone_btn").click(function(){
 
             alert("Abone olduğunuz için teşekkürler !");
@@ -160,5 +160,3 @@
         </script>
 
     </body>
-
-</html>

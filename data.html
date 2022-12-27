@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T T D | Data</title>
+    <meta name="keywords" content="Tarık Talha DİNÇ, Boğaziçi Üniversitesi,CET, Istanbul">
+    <meta name="description" content="Tarık Talha DİNÇ">
+    <!-- CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+    <link rel="icon" type="image/x-icon" href="./icons/ticon.ico">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/hakkımda.css">
+    <link rel="stylesheet" href="./css/data.css">
+    <!-- Google Fontlar -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Tablet & Telefon için-->
+    <link rel="stylesheet" media="[max-width:768px]" href="./css/tablet.css">
+    <link rel="stylesheet" media="[max-width:500px]" href="./css/mobile.css">
+</head>
+
+<body>
+    <header>
+        <div id="centered-header">
+            <!-- Logo -->
+            <section id="header-logo">
+                <a href="index.html"><img id="logo" src="./icons/ttd.png" alt="Tarık Talha Dinç"></a>
+            </section>
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li><a href="hakkımda.html" >Hakkımda</a></li>
+                    <li><a href="blog.html" >Blog</a></li>
+                    <li><a href="ttd-cv.pdf" >Kariyer</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- DataList -->
+
+    <div class="content" ></div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div id="left-footer">
+            <p>Benimle çalışmak veya bir kahve içmek istiyorsanız, <a style="color:#AA1916; font-weight: bold;"
+                href="mailto:tariktalhadinc@gmail.com">tariktalhadinc@gmail.com</a> adresinden bana e-posta gönderebilirsiniz.</p>
+        </div>
+        <div id="mid-footer">
+            <a target="_blank" href="https://www.instagram.com/tariktalhadinc/"><img src="icons/instagram-icon.svg"
+                    alt="Instagram" class="footer-icons"></a>
+            <a target="_blank" href="https://www.linkedin.com/in/tariktalhadinc/"><img src="icons/linkedin-icon.svg"
+                    alt="Linkedin" class="footer-icons"></a>
+            <a target="_blank" href="https://open.spotify.com/user/p90xbq2qnul4wnxu8qr494n0v?si=1667cb904b9648f7"><img
+                    src="icons/spotify-icon.svg" alt="Spotify" class="footer-icons"></a>
+        </div>
+    </footer>
+
+    <!-- Script Modal -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      
+        
+        <script>
+        var content = document.getElementsByClassName("content")[0]
+
+        function dataUpdate() {
+            $.ajax({
+                    url : 'https://localhost:7264/Personals',
+                    type : 'GET',           
+                    data : JSON.stringify (),
+                    contentType: 'application/json; charset=UTF-8',
+
+                    success : function(response)
+                    {            
+                        content.innerHTML = '';  
+                        response.forEach(element => {
+                            var text = document.createElement("a")
+                            text.setAttribute("href", `mailto:${element.name}`)
+                            text.className = "list-element"
+                            text.innerHTML = element.name
+                            console.log(content)
+                            content.appendChild(text)
+                        });
+                    },
+
+                    error : function(request,error)
+                    {
+                        alert("Request: "+JSON.stringify(request));
+                    }
+            });
+            updateCall();
+          }
+          
+          function updateCall(){
+          setTimeout(function(){dataUpdate()}, 5000);
+          }
+          
+          $(document).ready(function() {
+            dataUpdate();
+          });
+
+        </script>
+</body>

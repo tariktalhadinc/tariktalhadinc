@@ -1,0 +1,28 @@
+.content {
+    margin: 0 auto;
+    padding-top: 0;
+    margin-bottom: 100px ;
+    width: 300px;
+    text-align: center;
+    max-height: 78vh;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.content::-webkit-scrollbar {
+    display: none;
+}
+.list-element {
+    display: block;
+    font-weight: 700;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 0 20px;
+    margin: 10px auto;
+}
+.list-element:hover {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}

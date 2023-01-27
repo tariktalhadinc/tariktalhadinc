@@ -585,13 +585,11 @@
                 data : JSON.stringify ({'name' : $("#basic_email").val()}),
                 contentType: 'application/json; charset=UTF-8',
 
-                success : function(data)
-                {              
+                success : function(data){              
                     alert('Gelen kutunuzu kontrol ediniz'+data);
                 },
         
-                error : function(request,error)
-                {
+                error : function(request,error){
                     alert("Request: "+JSON.stringify(request));
                 }
             });

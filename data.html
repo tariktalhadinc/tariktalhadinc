@@ -83,8 +83,7 @@
                     data : JSON.stringify (),
                     contentType: 'application/json; charset=UTF-8',
 
-                    success : function(response)
-                    {            
+                    success : function(response){            
                         content.innerHTML = '';  
                         response.forEach(element => {
                             var text = document.createElement("a")
